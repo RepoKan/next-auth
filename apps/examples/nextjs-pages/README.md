@@ -59,6 +59,8 @@ cp .env.local.example .env.local
 
 Add details for one or more providers (e.g. Google, Twitter, GitHub, Email, etc).
 
+As an optional alternative to storing real values in `.env.local`, you can inject the same variables with Doppler. See [DOPPLER.md](./DOPPLER.md). Never commit real provider credentials or Doppler tokens.
+
 #### Database
 
 A database is needed to persist user accounts and to support email sign in. However, you can still use NextAuth.js for authentication without a database by using OAuth for authentication. If you do not specify a database, [JSON Web Tokens](https://jwt.io/introduction) will be enabled by default.
